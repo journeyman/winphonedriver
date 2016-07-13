@@ -33,6 +33,15 @@
                          AcceptsReturn="True"
                          VerticalAlignment="Center"
                          AutomationProperties.AutomationId="MyTextBox" AutomationProperties.Name="NonUniqueName"/>
+					<RichTextBox AutomationProperties.AutomationId="MyRichTextBox">
+						<Paragraph>
+							<Run>blah1</Run>
+							<InlineUIContainer>
+								<Rectangle Width="30" Height="30" Fill="LightGreen" />
+							</InlineUIContainer>
+							<Run>blah2</Run>
+						</Paragraph>
+					</RichTextBox>
                     <Button Content="Set 'CARAMBA' text to TextBox" Grid.Row="1" 
                         HorizontalAlignment="Center" 
                         AutomationProperties.AutomationId="SetButton" AutomationProperties.Name="NonUniqueName" Click="Button_Click"/>
